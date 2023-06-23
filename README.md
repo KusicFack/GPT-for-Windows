@@ -13,9 +13,10 @@
 4.对话控制：对于手控长对话模式，系统提供了三种对话角色：“user”、“reminder”、“system”。<br><br> “user”角色用于提出您的问题，ChatGPT会根据“reminder”、“system”的提示和设定做出回答<br>“reminder”角色也是提出您的问题，但其回答结果会被保留，并作为记录提示在后续对话中使用<br>“system”角色用于提出您对于ChatGPT的设定（例如扮演什么角色等要求），其不会传输给ChatGPT回答，而是直接作为设置在后续对话中影响ChatGPT回答<br>详细角色介绍请参阅OpenAI官方文档对于[角色消息的介绍](https://platform.openai.com/docs/guides/gpt/chat-completions-api)<br><br>“reminder”、“system”可点击左下角“查看对话设置”按钮查看，并可以手动删除；重复进行的“reminder”、“system”角色对话会覆盖前一次设定🕹️<br><br>
 ### 三、注意事项
 <br>1.网络连接：由于著名的[GFW](https://baike.c114.com.cn/view.asp?id=23004-44A3EE4E)的存在，目前ChatGPT无法在中国大陆内使用。本程序仅是利用OpenAI的官方API进行进行对话，因此如需使用还请自备方法科学上网🚀<br><br>
-2.对话错误：在对话中可能会遇到对话卡住、对话报错等状况，这可能是科学方法不稳定亦或是OpenAI本身API的问题，还请重试提问或者重置对话来解决❌<br><br>
-3.回答偏离：在对话过程中可能会遇到ChatGPT“偏题”回答，这可能是ChatGPT本身存在的不定时“抽风”现象，也可能是因为一些其他未知因素（例如对话记录格式等）导致。请您重新使用更加细致、准确的语言描述您的问题🤔<br><br>
-4.连续对话：每一个对话模型都有一次提问可处理的[token](https://platform.openai.com/docs/guides/gpt/managing-tokens)数量上限。token数量取决于您的问题和对话设置（或者是对话历史记录）。显然，保留历史记录的连续对话token数量会随着对话的进行而增多，最后token数量会超过其处理上限。因此程序设置了连续对话的字数最大值，一旦字数超越最大值后程序便不允许再进行对话。各模型的最大token支持详见[OpenAI官方文档](https://platform.openai.com/docs/models/models)🔝<br><br>
-5.对话收费：您将会被依据每次提问的token数量收取一定费用，当您的OpenAI账户上金额归零后可能无法再使用ChatGPT。请注意，本程序不会收取您的费用，您的费用全权由OpenAI计算收取。收费标准详见[OpenAI模型价目表](https://openai.com/pricing)💰<br><br>
+2.额外工具：目前而言，程序运行需要本地MathJax（提供Latex公式显示支持，3.1版本及以后），部分用户可能由于中文路径问题还需补充QtWebengine组件。作者已将必要组件和程序本体打包在了一起，您可以把文件解压后放在其他位置，然后创建程序的桌面快捷方式即可。如果误删必要组件，请在本页面重新下载放置于程序路径下🛠️<br><br>
+3.对话错误：在对话中可能会遇到对话卡住、对话报错等状况，这可能是科学方法不稳定亦或是OpenAI本身API的问题，还请重试提问或者重置对话来解决❌<br><br>
+4.回答偏离：在对话过程中可能会遇到ChatGPT“偏题”回答，这可能是ChatGPT本身存在的不定时“抽风”现象，也可能是因为一些其他未知因素（例如对话记录格式等）导致。请您重新使用更加细致、准确的语言描述您的问题🤔<br><br>
+5.连续对话：每一个对话模型都有一次提问可处理的[token](https://platform.openai.com/docs/guides/gpt/managing-tokens)数量上限。token数量取决于您的问题和对话设置（或者是对话历史记录）。显然，保留历史记录的连续对话token数量会随着对话的进行而增多，最后token数量会超过其处理上限。因此程序设置了连续对话的字数最大值，一旦字数超越最大值后程序便不允许再进行对话。各模型的最大token支持详见[OpenAI官方文档](https://platform.openai.com/docs/models/models)🔝<br><br>
+6.对话收费：您将会被依据每次提问的token数量收取一定费用，当您的OpenAI账户上金额归零后可能无法再使用ChatGPT。请注意，本程序不会收取您的费用，您的费用全权由OpenAI计算收取。收费标准详见[OpenAI模型价目表](https://openai.com/pricing)💰<br><br>
 ## 写在最后
 <br>本程序的创建更新是作者一人在课余期间完成的，因此更新较为佛系🕊️。由于作者并非计软网专业，只是一个乐于折腾的业余Python爱好者，因此本程序并不完美，可能会有一些莫名奇妙的BUG产生（尽管作者已经尽力实践避坑）😳，还请您在issue中及时提供建议和反馈便于作者进一步改进。作者真心希望这个程序能够帮助到您，也希望您在使用之余能给作者一个小小的Star🌟支持，或者关注作者[bilibili](https://space.bilibili.com/349868513)。您的支持是作者的不懈动力🙏
