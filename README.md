@@ -1,5 +1,5 @@
 # GPT-for-Windows
-利用PySide6实现的与OpenAI通信的Windows本地客户端，支持Windows10/11。您只需要提供OpenAI key就可以如在网站上一样正常使用ChatGPT。
+利用PySide6实现的与OpenAI通信的Windows本地客户端，支持Windows10。您只需要提供OpenAI key就可以如在网站上一样正常使用ChatGPT。
 
 ## 使用说明
 ### 一、使用步骤
