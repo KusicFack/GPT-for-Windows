@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="icos">
+    <file>GPT_ICO.ico</file>
+  </qresource>
+</RCC>
